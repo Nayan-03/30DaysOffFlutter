@@ -1,0 +1,75 @@
+{
+    "products": [
+        {
+            "id": "Catalog1",
+            "name": "iPhone 12 pro",
+            "desc": " Apple iPhone 12th generation",
+            "price": 999,
+            "color": "#00008B",
+            "image": "https://photos5.appleinsider.com/gallery/38573-73428-iPhone-12-Pro-Blue-Angle-xl.jpg"
+        },
+
+        {
+            "id": "Catalog2",
+            "name": "Pixel 5",
+            "desc": "Google Pixel Phone 5th generation",
+            "price": 699,
+            "color": "#000000",
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6431/6431992_sd.jpg"
+        },
+
+        {
+            "id": "Catalog3",
+            "name": "MI Macbook Air",
+            "desc": "Apple Macbook air with apple silicon",
+            "price": 1099,
+            "color": "#C0C0C0",
+            "image": "https://5.imimg.com/data5/GX/KX/QG/SELLER-81664477/apple-macbook-air-500x500.png"
+        },
+
+        {
+            "id": "Catalog4",
+            "name": "Playstation 5",
+            "desc": "Sony Playstation 5th generation",
+            "price": 500,
+            "color": "#F2F3F5",
+            "image": "https://discountshop-online.com/618-medium_default/console-sony-playstation-5-edition-standard.jpg"
+        },
+
+        {
+            "id": "Catalog5",
+            "name": "Airpods Pro",
+            "desc": "Apple Airpods Pro 1st generation",
+            "price": 200,
+            "color": "#FFFFFF",
+            "image": "https://static.bhphotovideo.com/explora/sites/default/files/05-apple-airpods-pro-with-wireless-charging-case.png"
+        },
+
+        {
+            "id": "Catalog6",
+            "name": "iPad Pro",
+            "desc": "Apple iPad PRo 2020 edition",
+            "price": 799,
+            "color": "#B76E79",
+            "image": "https://leronza.com/wp-content/uploads/2020/06/iPad_PRO_Rose_Gold_Leronza_G_Black-1-scaled.jpg"
+        },
+
+        {
+            "id": "Catalog7",
+            "name": "Galaxy S21 Ultra",
+            "desc": "Samsung Galaxy S21 Ultra 2021 edition",
+            "price": 1299,
+            "color": "#000000",
+            "image": "https://m.media-amazon.com/images/I/81kfA-GtWwL._SY606_.jpg"
+        },
+
+        {
+            "id": "Catalog8",
+            "name": "Galaxy S21",
+            "desc": "Samsung Galaxy S21 2021 edition",
+            "price": 899,
+            "color": "#FFFFFF",
+            "image": "https://www.xda-developers.com/files/2021/01/Samsung-Galaxy-S21-5G-Phantom-White-Feature-Image.jpg"
+        }
+    ]
+}
