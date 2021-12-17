@@ -1,7 +1,7 @@
 {
     "products": [
         {
-            "id": "Catalog1",
+            "id": 1,
             "name": "iPhone 12 pro",
             "desc": " Apple iPhone 12th generation",
             "price": 999,
@@ -10,7 +10,7 @@
         },
 
         {
-            "id": "Catalog2",
+            "id": 2,
             "name": "Pixel 5",
             "desc": "Google Pixel Phone 5th generation",
             "price": 699,
@@ -19,7 +19,7 @@
         },
 
         {
-            "id": "Catalog3",
+            "id": 3,
             "name": "MI Macbook Air",
             "desc": "Apple Macbook air with apple silicon",
             "price": 1099,
@@ -28,7 +28,7 @@
         },
 
         {
-            "id": "Catalog4",
+            "id": 4,
             "name": "Playstation 5",
             "desc": "Sony Playstation 5th generation",
             "price": 500,
@@ -37,7 +37,7 @@
         },
 
         {
-            "id": "Catalog5",
+            "id": 5,
             "name": "Airpods Pro",
             "desc": "Apple Airpods Pro 1st generation",
             "price": 200,
@@ -46,7 +46,7 @@
         },
 
         {
-            "id": "Catalog6",
+            "id": 6,
             "name": "iPad Pro",
             "desc": "Apple iPad PRo 2020 edition",
             "price": 799,
@@ -55,7 +55,7 @@
         },
 
         {
-            "id": "Catalog7",
+            "id": 7,
             "name": "Galaxy S21 Ultra",
             "desc": "Samsung Galaxy S21 Ultra 2021 edition",
             "price": 1299,
@@ -64,7 +64,7 @@
         },
 
         {
-            "id": "Catalog8",
+            "id": 8,
             "name": "Galaxy S21",
             "desc": "Samsung Galaxy S21 2021 edition",
             "price": 899,
