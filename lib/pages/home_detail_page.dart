@@ -1,4 +1,6 @@
 
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/models/catalog.dart';
 import 'package:flutter_application_1/widgets/themes.dart';
@@ -14,11 +16,10 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent),
-      backgroundColor: MyTheme.creaamColor,
+      appBar: AppBar(backgroundColor: Colors.transparent),
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
         alignment: MainAxisAlignment.spaceBetween,
         buttonPadding: EdgeInsets.zero,
@@ -27,7 +28,7 @@ class HomeDetailPage extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                 style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(MyTheme.darkBluishColor,),
+                backgroundColor: MaterialStateProperty.all(context.theme.buttonColor,),
                 shape: MaterialStateProperty.all(const StadiumBorder())),
               child: "Add to cart".text.make(),
             ).wh(120, 50),
@@ -48,17 +49,17 @@ class HomeDetailPage extends StatelessWidget {
                 arcType: VxArcType.CONVEY,
                 edge: VxEdge.TOP,
               child: Container(
-                color: Colors.white,
+                color: context.cardColor,
                 width: context.screenWidth,
                 child: Column(
                   children: [
                     catalog.name.text.xl4
-                    .color(MyTheme.darkBluishColor)
+                    .color(context.accentColor)
                     .bold.make(),
                     catalog.desc.text.xl.make(),
-                    10.heightBox,
+                    16.heightBox,
                     "Dolor dolor dolores at sit et consetetur sanctus est rebum no, stet amet sadipscing aliquyam stet sadipscing sanctus diam sed est, takimata dolor nonumy ipsum dolor duo. Sed lorem stet rebum aliquyam labore dolor et kasd dolor, sadipscing dolore aliquyam labore duo et sed est gubergren tempor. Dolore sea et."
-                    .text.xs.make().p16(),
+                    .text.xs.make().px16(),
                   ],
                 ).py64(),
               ),

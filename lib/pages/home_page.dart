@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_null_comparison
+// ignore_for_file: unnecessary_null_comparison, deprecated_member_use
 
 import 'dart:convert';
 
@@ -48,11 +48,11 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: MyTheme.creaamColor,
+        backgroundColor: context.cardColor,
         floatingActionButton: FloatingActionButton(
           onPressed: () => Navigator.pushNamed(context, MyRouts.cartRoute),
-          backgroundColor: MyTheme.darkBluishColor,
-          child: Icon(CupertinoIcons.cart),
+          backgroundColor: context.theme.buttonColor,
+          child: Icon(CupertinoIcons.cart, color: Colors.white,),
           ),
         body: SafeArea(
           child: Container(

@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_null_comparison
+// ignore_for_file: unnecessary_null_comparison, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/models/catalog.dart';
@@ -57,7 +57,7 @@ class CatalogItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            catalog.name.text.lg.color(MyTheme.darkBluishColor).bold.make(),
+            catalog.name.text.lg.color(context.accentColor).bold.make(),
             catalog.desc.text.make(),
             10.heightBox,
             ButtonBar(
@@ -69,7 +69,7 @@ class CatalogItem extends StatelessWidget {
                   onPressed: () {},
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(
-                      MyTheme.darkBluishColor,
+                      context.theme.buttonColor,
                       ),
                       shape: MaterialStateProperty.all(const StadiumBorder()),
                     ),
@@ -81,6 +81,6 @@ class CatalogItem extends StatelessWidget {
           ],
         ))
       ],
-    )).white.rounded.square(150).make().py16();
+    )).color(context.cardColor).rounded.square(150).make().py16();
   }
 }
