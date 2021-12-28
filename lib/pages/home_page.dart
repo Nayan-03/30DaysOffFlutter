@@ -10,7 +10,6 @@ import 'package:flutter_application_1/models/catalog.dart';
 import 'package:flutter_application_1/utils/routes.dart';
 import 'package:flutter_application_1/widgets/home_widgets/catalog_header.dart';
 import 'package:flutter_application_1/widgets/home_widgets/catalog_list.dart';
-import 'package:flutter_application_1/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 
@@ -52,7 +51,7 @@ class _HomePageState extends State<HomePage> {
         floatingActionButton: FloatingActionButton(
           onPressed: () => Navigator.pushNamed(context, MyRouts.cartRoute),
           backgroundColor: context.theme.buttonColor,
-          child: Icon(CupertinoIcons.cart, color: Colors.white,),
+          child: const Icon(CupertinoIcons.cart, color: Colors.white,),
           ),
         body: SafeArea(
           child: Container(

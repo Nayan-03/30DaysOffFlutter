@@ -40,8 +40,8 @@ class MyTheme {
       );
 
   //Colors
-  static Color creaamColor = Color(0xfff5f5f5);
+  static Color creaamColor = const Color(0xfff5f5f5);
   static Color darkcreaamColor = Vx.gray900;
-  static Color darkBluishColor = Color(0xff403b58);
+  static Color darkBluishColor = const Color(0xff403b58);
   static Color lightBluishColor = Vx.indigo500;
 }
