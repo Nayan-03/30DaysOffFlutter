@@ -54,10 +54,10 @@ class CatalogItem extends StatelessWidget {
           children: [
             catalog.name.text.lg.color(context.accentColor).bold.make(),
             catalog.desc.text.make(),
-            10.heightBox,
+            //10.heightBox,
             ButtonBar(
               alignment: MainAxisAlignment.spaceBetween,
-              buttonPadding: EdgeInsets.zero,
+              //buttonPadding: EdgeInsets.zero,
               children: [
                 "\$${catalog.price}".text.bold.xl.make(),
                 AddToCart(catalog: catalog)
@@ -69,5 +69,3 @@ class CatalogItem extends StatelessWidget {
     )).color(context.cardColor).rounded.square(150).make().py16();
   }
 }
-
-
