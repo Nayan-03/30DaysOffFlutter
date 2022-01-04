@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, avoid_print
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/store.dart';
@@ -18,7 +18,7 @@ class CartPage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          CartList().p32().expand(),
+          const CartList().p32().expand(),
           const Divider(),
           const CartTotal(),
         ],
@@ -39,8 +39,9 @@ class CartTotal extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           VxBuilder(
-            mutations: {RemoveMutation},
+            mutations: const {RemoveMutation},
             builder: (context, store, status) {
+              print("Rebuild Happend");
               return "\$${_cart.totalPrice}"
                   .text
                   .xl5
@@ -59,8 +60,7 @@ class CartTotal extends StatelessWidget {
                 backgroundColor:
                     MaterialStateProperty.all(context.theme.buttonColor)),
             child: "Buy".text.white.make(),
-          )
-          .w20(context)
+          ).w24(context)
         ],
       ),
     );

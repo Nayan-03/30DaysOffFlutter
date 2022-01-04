@@ -1,6 +1,3 @@
-
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/models/catalog.dart';
 import 'package:flutter_application_1/widgets/home_widgets/add_to_cart.dart';
@@ -10,8 +7,7 @@ class HomeDetailPage extends StatelessWidget {
   final Item catalog;
 
   const HomeDetailPage({Key? key, required this.catalog}) 
-  : assert (catalog != null),
-  super(key: key);
+  : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -49,10 +45,10 @@ class HomeDetailPage extends StatelessWidget {
                 child: Column(
                   children: [
                     catalog.name.text.xl4
-                    .color(context.accentColor)
-                    .bold.make(),
+                        .color(context.accentColor)
+                        .bold.make(),
                     catalog.desc.text.xl.make(),
-                    16.heightBox,
+                    10.heightBox,
                     "Dolor dolor dolores at sit et consetetur sanctus est rebum no, stet amet sadipscing aliquyam stet sadipscing sanctus diam sed est, takimata dolor nonumy ipsum dolor duo. Sed lorem stet rebum aliquyam labore dolor et kasd dolor, sadipscing dolore aliquyam labore duo et sed est gubergren tempor. Dolore sea et."
                     .text.xs.make().px16(),
                   ],
