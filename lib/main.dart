@@ -25,10 +25,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: MyRouts.homeRoute,
       routes: {
-        "/": (context) => LoginPage(),
-        MyRouts.homeRoute: (context) => HomePage(),
-        MyRouts.loginRoute: (context) => LoginPage(),
-        MyRouts.cartRoute: (context) => CartPage()
+        "/": (context) => const LoginPage(),
+        MyRouts.homeRoute: (context) => const HomePage(),
+        MyRouts.loginRoute: (context) => const LoginPage(),
+        MyRouts.cartRoute: (context) => const CartPage()
       },
     );
   }
