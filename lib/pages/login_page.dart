@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/utils/routes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -24,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
         changeButton = true;
       });
       await Future.delayed(const Duration(seconds: 1));
-      await Navigator.pushNamed(context, MyRouts.homeRoute);
+      Navigator.pushNamed(context, MyRoutes.homeRoute);
       setState(() {
         changeButton = false;
       });
@@ -85,8 +84,8 @@ class _LoginPageState extends State<LoginPage> {
                         validator: (value) {
                           if (value!.isEmpty) {
                             return "Password cannot be empty";
-                          } else if (value.length < 6) {
-                            return "Password length should be atleast 6";
+                          } else if (value.length < 8) {
+                            return "Password length should be atleast 8";
                           }
 
                           return null;
@@ -95,7 +94,6 @@ class _LoginPageState extends State<LoginPage> {
                       const SizedBox(
                         height: 40.0,
                       ),
-
                       Material(
                         color: context.theme.buttonColor,
                         borderRadius:
@@ -123,14 +121,6 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ),
-
-                      //ElevatedButton(
-                      //child: const Text("LOGIN"),
-                      //style: TextButton.styleFrom(minimumSize: Size(150, 40)),
-                      //onPressed: () {
-                      //Navigator.pushNamed(context, MyRouts.homeRoute);
-                      //},
-                      //),
                     ],
                   ),
                 ),

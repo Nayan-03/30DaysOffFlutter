@@ -12,11 +12,12 @@ class MyTheme {
         canvasColor: creaamColor,
         buttonColor: darkBluishColor,
          accentColor: darkBluishColor,
-        appBarTheme: const AppBarTheme(
-          color: Colors.white,
-          elevation: 0.0,
+        appBarTheme:  const AppBarTheme(
+          // color: Colors.white,
+          // elevation: 0.0,
           iconTheme: IconThemeData(color: Colors.black),
-          titleTextStyle: TextStyle(color: Colors.black,
+          titleTextStyle: TextStyle(color: Colors.white,
+            fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -29,6 +30,7 @@ class MyTheme {
         canvasColor: darkcreaamColor,
         buttonColor: lightBluishColor,
         accentColor: Colors.white,
+        
         appBarTheme: const AppBarTheme(
           color: Colors.black,
           elevation: 0.0,

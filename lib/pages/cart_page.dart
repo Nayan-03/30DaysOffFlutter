@@ -13,8 +13,20 @@ class CartPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: context.canvasColor,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.purple, Colors.red],
+              ),
+            ),
+          ),
+        // backgroundColor: Colors.transparent,
         title: "Cart".text.make(),
+        titleTextStyle: const TextStyle(
+          color: Colors.white, 
+          fontSize: 20, 
+          fontWeight: FontWeight.bold
+        ),
       ),
       body: Column(
         children: [
